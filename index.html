@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Optimum Data Cooling
+  </title>
+  <style>
+   body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('datacenter_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+    animation: bgScroll 30s linear infinite;
+}
+
+@keyframes bgScroll {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #111;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #00bfff;
+            margin-right: 20px;
+            text-decoration: none;
+            position: relative;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #222;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: #00bfff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            padding: 40px;
+        }
+  </style>
+  <style>
+   .slider-container {
+  text-align: center;
+  margin-top: 10px;
+}
+input[type=range] {
+  width: 80%;
+  max-width: 200px;
+}
+  </style>
+  <script>
+   function resizeImage(slider, imgId) {
+  const size = slider.value;
+  document.getElementById(imgId).style.width = size + "%";
+}
+  </script>
+  <style>
+   .card, .hero h1, .section h2, .card p, .card h3 {
+  text-shadow: 1px 1px 3px #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border-radius: 5px;
+}
+  </style>
+ </head>
+ <body>
+  <nav>
+   <a href="index.html">
+    Home
+   </a>
+   <div class="dropdown">
+    <a href="#">
+     Solutions
+    </a>
+    <div class="dropdown-content">
+     <a href="cool-fusion.html">
+      Cool-Fusion
+     </a>
+     <a href="itee.html">
+      iTEE
+     </a>
+     <a href="micro-dc.html">
+      Micro-DC
+     </a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <a href="#">
+     Resources
+    </a>
+    <div class="dropdown-content">
+     <a href="dstl.html">
+      DSTL Case Study
+     </a>
+    </div>
+   </div>
+  </nav>
+  <div class="container">
+   <h1>
+    Optimum Data Cooling
+   </h1>
+   <p>
+    Welcome to Optimum Data Cooling. Explore our solutions for high-efficiency data center environments.
+   </p>
+  </div>
+  <div class="section">
+   <h2>
+    Chilled Water Cooling
+   </h2>
+   <div class="products">
+    <div class="card">
+     <img alt="EN10CW" id="en10img" src="en10.png" style="width:80%; max-width:300px; display:block; margin:0 auto 10px; border-radius:8px; height: auto; aspect-ratio: 1 / 0.75;"/>
+     <div class="slider-container">
+      <input max="100" min="20" oninput="resizeImage(this, 'en10img')" type="range" value="80"/>
+      <p>
+       Adjust width
+      </p>
+     </div>
+     <h3>
+      Chilled Water Cooling - EN10
+     </h3>
+     <p>
+      The EN10CW is a compact, close coupled chilled water unit that utilises electronically controlled fans and valve technology combined with a coil. This allows the EN10CW to deliver impressive cooling duties from a space saving package. The system can provide an impressive 10kW of cooling from 10U of rack space.
+     </p>
+     <p>
+      <strong>
+       List Price:
+      </strong>
+      From £6,460 plus VAT
+     </p>
+    </div>
+    <div class="card">
+     <img alt="EN21CW" id="en24img" src="en24.png" style="width:80%; max-width:300px; display:block; margin:0 auto 10px; border-radius:8px; height: auto; aspect-ratio: 1 / 0.75;"/>
+     <div class="slider-container">
+      <input max="100" min="20" oninput="resizeImage(this, 'en24img')" type="range" value="80"/>
+      <p>
+       Adjust width
+      </p>
+     </div>
+     <h3>
+      Chilled Water Cooling - EN21
+     </h3>
+     <p>
+      The EN21CW is a compact, close coupled chilled water cooling unit that utilises electronically controlled fans and valve technology combined with the V-Coil. This allows the EN21CW to deliver impressive cooling duties from a space saving package. The EN21CW can provide up to 30kW of sensible cooling, while occupying half of the space of a single 42U cabinet.
+     </p>
+     <p>
+      <strong>
+       List Price:
+      </strong>
+      From £10,200 plus VAT
+     </p>
+    </div>
+    <div class="card">
+     <img alt="EN42CW" id="en42img" src="en42.png" style="width:80%; max-width:300px; display:block; margin:0 auto 10px; border-radius:8px; height: auto; aspect-ratio: 1 / 0.75;"/>
+     <div class="slider-container">
+      <input max="100" min="20" oninput="resizeImage(this, 'en42img')" type="range" value="80"/>
+      <p>
+       Adjust width
+      </p>
+     </div>
+     <h3>
+      Chilled Water Cooling - EN42
+     </h3>
+     <p>
+      The EN42CW is a compact, close coupled chilled water cooling unit that utilises electronically controlled fans and valve technology combined with the V-Coil. This allows the EN42CW to deliver impressive cooling duties from a space saving package. The EN42CW can provide up to 70kW of sensible cooling, while occupying the space of a single 42U cabinet.
+     </p>
+     <p>
+      <strong>
+       List Price:
+      </strong>
+      From £13,500 plus VAT
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
